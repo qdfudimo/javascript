@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var num = 0;
+        //且 && 逻辑运算，两个为真，返回的是后面的值。如果有一个为假，则返回假的那个值。
+        console.log(12 && num++); //0 判断过后num才变为1
+        console.log(num); //1
+        //或 || 逻辑运算，前面数为真，后面的值就不会再进行计算，保持原样
+        //如果前面为假，则再判断后面的，如果是num++，先参与判断，判断完结果后，才加1
+        var num1 = 0;
+        console.log(12 || num1++); //12   num此时为0就不会再加1了
+        console.log(num1); //0
+        var b = 10;
+        //加号和等于号之间没有空格
+        b += 2;
+        console.log(b); //12
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

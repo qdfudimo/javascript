@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log('开始');
+        for (var i = 0; i < 3; i++) {;
+            (function(a) {
+                setTimeout(function() {
+                    console.log(a);
+                })
+            })(i) //内部函数访问外部函数的变量
+        }
+        console.log('结束');
+    </script>
+</body>
+
+</html>

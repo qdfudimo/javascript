@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        Person.prototype.run = function() {
+            console.log(11);
+        }
+
+        function Student(name, age, score) {
+            Person.call(this, name, age);
+            this.score = score;
+        }
+        console.log(new Person); //{name:undefined,.......}
+        Student.prototype = new Person(); //{name:undefined,.......}
+        console.log(Student.prototype);
+        Student.prototype.constructor = Student;
+        Student.prototype.write = function() {
+                console.log('写字');
+            }
+            //不改变Student的构造函数指向，会指向父类型的
+            //为了让子类型能有自己的私有方法，父类型new的实例对象访问不到子类型的方法
+        var s1 = new Student('zz', 12, 200); //{name:'zz',.......}
+        var p1 = new Person();
+        console.dir(s1);
+        s1.run();
+        s1.write();
+        p1.run();
+        // p1.write(); //访问不到子类型的私有方法
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str5 = 'adsggfdgf';
+        // console.log(str.charAt(3));
+        // for (var i = 0; i < str.length; i++) {
+        //     console.log(str.charAt(i));
+        // }
+        //判断一个字符出现的次数
+        var count = 0;
+        for (var j = 0; j < str5.length; j++) {
+            if (str5[j] === 'g') {
+                count += 1;
+            }
+        }
+        console.log(count);
+        //concat
+        var arr1 = [22, 33];
+        var arr2 = [44, 55];
+        console.log(arr1.concat(arr2));
+        //substr 开始的位置  要街区的个数
+        var str = '你在哪里啊我在这里啊';
+        console.log(str.substr(2, 2));
+        //replace  选择替换的字符 要替换的字
+        var str1 = 'qwerty';
+        console.log(str1.replace('w', 's'));
+        // split  选择分割的符号，然后返回为数组
+        var str4 = '你好,我好,他好';
+        console.log(str4.split(','));
+    </script>
+</body>
+
+</html>

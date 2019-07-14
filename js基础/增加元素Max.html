@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var arr = [2, 3, 73, 2];
+        // console.log(arr.length);
+        // arr.length = 5;
+        // console.log(arr);
+        // arr[4] = 5;
+        // console.log(arr[4]);
+        // console.log(arr);
+        // var a = 10;
+        // var b = 5;
+        // var c = 13;
+        // var max = a > b ? (a > c ? a : c) : (b > c ? b : c);
+        // console.log(max);
+        //封装函数三个数中的最大值
+        function getMax(a, b, c) {
+            return a > b ? (a > c ? a : c) : (b > c ? b : c);
+        }
+        var a = +prompt('输入第一个数');
+        var b = +prompt('输入第二个数');
+        var c = +prompt('输入第三个数');
+        var max = getMax(a, b, c);
+        // console.log(max);
+        alert(max);
+        //写一个函数，用户输入任意三个不同数字的最大值，并能弹出运算后的结果。
+        //  function getMax(a,b,c) {
+
+        //  }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function getArr(arr) {
+        //     var max = arr[0];
+        //     for (var i = 1; i < arr.length; i++) {
+        //         if (arr[i] > max) {
+        //             max = arr[i];
+        //         }
+        //     }
+        //     return max;
+        // }
+        // var ni = [1, 4, 7, 3, 9];
+        // var re = getArr(ni);
+        // console.log(re);
+        function getArr(arr) {
+            var max = arr[0];
+            for (var i = 1; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+        // var ni = [1, 4, 7, 3, 9];
+        // var re = getArr(ni);
+        console.log(getArr(1, 3, 5));
+    </script>
+</body>
+
+</html>
